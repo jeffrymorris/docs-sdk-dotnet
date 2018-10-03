@@ -88,8 +88,8 @@ http://packages.couchbase.com/clients/net/2.5/Couchbase-Net-Client-2.7.0.zip[Dow
 This release has the following known issues:
 
 * https://issues.couchbase.com/browse/NCBC-1296[NCBC-1296] -
-.NETCore SDK N1QL query throws System.PlatformNotSupportedException
-on some .NET Core platforms.  A workaround is available.
+PlatformNotSupportedException thrown when using libcurl <= 7.29.0 and OpenSSL
+
 * https://issues.couchbase.com/browse/NCBC-1502[NCBC-1502] -
 Fatal error: unexpected end of JSON input
 
@@ -127,8 +127,8 @@ http://packages.couchbase.com/clients/net/2.5/Couchbase-Net-Client-2.6.2.zip[Dow
 This release has the following known issues:
 
 * https://issues.couchbase.com/browse/NCBC-1296[NCBC-1296] -
-.NETCore SDK N1QL query throws System.PlatformNotSupportedException
-on some .NET Core platforms.  A workaround is available.
+PlatformNotSupportedException thrown when using libcurl <= 7.29.0 and OpenSSL
+
 * https://issues.couchbase.com/browse/NCBC-1502[NCBC-1502] -
 Fatal error: unexpected end of JSON input
 
@@ -171,8 +171,8 @@ http://packages.couchbase.com/clients/net/2.5/Couchbase-Net-Client-2.6.1.zip[Dow
 This release has the following known issues:
 
 * https://issues.couchbase.com/browse/NCBC-1296[NCBC-1296] -
-.NETCore SDK N1QL query throws System.PlatformNotSupportedException
-on some .NET Core platforms.  A workaround is available.
+PlatformNotSupportedException thrown when using libcurl <= 7.29.0 and OpenSSL
+
 * https://issues.couchbase.com/browse/NCBC-1502[NCBC-1502] -
 Fatal error: unexpected end of JSON input
 
@@ -238,8 +238,8 @@ http://packages.couchbase.com/clients/net/2.5/Couchbase-Net-Client-2.6.0.zip[Dow
 This release has the following known issues:
 
 * https://issues.couchbase.com/browse/NCBC-1296[NCBC-1296] -
-.NETCore SDK N1QL query throws System.PlatformNotSupportedException
-on some .NET Core platforms.  A workaround is available.
+PlatformNotSupportedException thrown when using libcurl <= 7.29.0 and OpenSSL
+
 * https://issues.couchbase.com/browse/NCBC-1502[NCBC-1502] -
 Fatal error: unexpected end of JSON input
 
@@ -340,8 +340,8 @@ http://packages.couchbase.com/clients/net/2.5/Couchbase-Net-Client-2.5.12.zip[Do
 This release has the following known issues:
 
 * https://issues.couchbase.com/browse/NCBC-1296[NCBC-1296] -
-.NETCore SDK N1QL query throws System.PlatformNotSupportedException
-on some .NET Core platforms.  A workaround is available.
+PlatformNotSupportedException thrown when using libcurl <= 7.29.0 and OpenSSL
+
 * https://issues.couchbase.com/browse/NCBC-1502[NCBC-1502] -
 Fatal error: unexpected end of JSON input
 
@@ -373,8 +373,8 @@ http://packages.couchbase.com/clients/net/2.5/Couchbase-Net-Client-2.5.10.zip[Do
 This release has the following known issues:
 
 * https://issues.couchbase.com/browse/NCBC-1296[NCBC-1296] -
-.NETCore SDK N1QL query throws System.PlatformNotSupportedException
-on some .NET Core platforms.  A workaround is available.
+PlatformNotSupportedException thrown when using libcurl <= 7.29.0 and OpenSSL
+
 * https://issues.couchbase.com/browse/NCBC-1502[NCBC-1502] -
 Fatal error: unexpected end of JSON input
 
@@ -425,8 +425,8 @@ http://packages.couchbase.com/clients/net/2.5/Couchbase-Net-Client-2.6.0-beta.zi
 This release has the following known issues:
 
 * https://issues.couchbase.com/browse/NCBC-1296[NCBC-1296] -
-.NETCore SDK N1QL query throws System.PlatformNotSupportedException
-on some .NET Core platforms.  A workaround is available.
+PlatformNotSupportedException thrown when using libcurl <= 7.29.0 and OpenSSL
+
 * https://issues.couchbase.com/browse/NCBC-1502[NCBC-1502] -
 Fatal error: unexpected end of JSON input
 
@@ -454,8 +454,8 @@ http://packages.couchbase.com/clients/net/2.5/Couchbase-Net-Client-2.5.9.zip[Dow
 This release has the following known issues:
 
 * https://issues.couchbase.com/browse/NCBC-1296[NCBC-1296] -
-.NETCore SDK N1QL query throws System.PlatformNotSupportedException
-on some .NET Core platforms.  A workaround is available.
+PlatformNotSupportedException thrown when using libcurl <= 7.29.0 and OpenSSL
+
 * https://issues.couchbase.com/browse/NCBC-1502[NCBC-1502] -
 Fatal error: unexpected end of JSON input
 
@@ -486,8 +486,8 @@ http://packages.couchbase.com/clients/net/2.5/Couchbase-Net-Client-2.5.8.zip[Dow
 This release has the following known issues:
 
 * https://issues.couchbase.com/browse/NCBC-1296[NCBC-1296] -
-.NETCore SDK N1QL query throws System.PlatformNotSupportedException
-on some .NET Core platforms.  A workaround is available.
+PlatformNotSupportedException thrown when using libcurl <= 7.29.0 and OpenSSL
+
 * https://issues.couchbase.com/browse/NCBC-1502[NCBC-1502] -
 Fatal error: unexpected end of JSON input
 
@@ -510,13 +510,9 @@ Please use 2.5.8 instead.
 
 This release has the following known issues:
 
-* https://issues.couchbase.com/browse/NCBC-1296[NCBC-1296] -
-.NETCore SDK N1QL query throws System.PlatformNotSupportedException
-on some .NET Core platforms.  A workaround is available.
-* https://issues.couchbase.com/browse/NCBC-1502[NCBC-1502] -
-Fatal error: unexpected end of JSON input
-* https://issues.couchbase.com/browse/NCBC-1645[NCBC-1645] -
-Make SDK use OpenTracing.Signed v0.10.4
+* https://issues.couchbase.com/browse/NCBC-1296[NCBC-1296] - PlatformNotSupportedException thrown when using libcurl <= 7.29.0 and OpenSSL
+* https://issues.couchbase.com/browse/NCBC-1502[NCBC-1502] - Fatal error: unexpected end of JSON input
+* https://issues.couchbase.com/browse/NCBC-1645[NCBC-1645] - Make SDK use OpenTracing.Signed v0.10.4
 
 === New Features and Behavioural Changes
 
@@ -547,8 +543,8 @@ Please use 2.5.8 instead.
 This release has the following known issues:
 
 * https://issues.couchbase.com/browse/NCBC-1296[NCBC-1296] -
-.NETCore SDK N1QL query throws System.PlatformNotSupportedException
-on some .NET Core platforms.  A workaround is available.
+PlatformNotSupportedException thrown when using libcurl <= 7.29.0 and OpenSSL
+
 * https://issues.couchbase.com/browse/NCBC-1502[NCBC-1502] -
 Fatal error: unexpected end of JSON input
 * https://issues.couchbase.com/browse/NCBC-1645[NCBC-1645] -
@@ -611,13 +607,9 @@ Please use 2.6.0-beta instead.
 
 This release has the following known issues:
 
-* https://issues.couchbase.com/browse/NCBC-1296[NCBC-1296] -
-.NETCore SDK N1QL query throws System.PlatformNotSupportedException
-on some .NET Core platforms.  A workaround is available.
-* https://issues.couchbase.com/browse/NCBC-1502[NCBC-1502] -
-Fatal error: unexpected end of JSON input
-* https://issues.couchbase.com/browse/NCBC-1645[NCBC-1645] -
-Make SDK use OpenTracing.Signed v0.10.4
+* https://issues.couchbase.com/browse/NCBC-1296[NCBC-1296] - PlatformNotSupportedException thrown when using libcurl <= 7.29.0 and OpenSSL
+* https://issues.couchbase.com/browse/NCBC-1502[NCBC-1502] - Fatal error: unexpected end of JSON input
+* https://issues.couchbase.com/browse/NCBC-1645[NCBC-1645] - Make SDK use OpenTracing.Signed v0.10.4
 
 === New Features and Behavioural Changes
 
@@ -645,11 +637,8 @@ http://packages.couchbase.com/clients/net/2.5/Couchbase-Net-Client-2.5.5.zip[Dow
 
 This release has the following known issues:
 
-* https://issues.couchbase.com/browse/NCBC-1296[NCBC-1296] -
-.NETCore SDK N1QL query throws System.PlatformNotSupportedException
-on some .NET Core platforms.  A workaround is available.
-* https://issues.couchbase.com/browse/NCBC-1502[NCBC-1502] -
-Fatal error: unexpected end of JSON input
+* https://issues.couchbase.com/browse/NCBC-1296[NCBC-1296] - PlatformNotSupportedException thrown when using libcurl <= 7.29.0 and OpenSSL
+* https://issues.couchbase.com/browse/NCBC-1502[NCBC-1502] - Fatal error: unexpected end of JSON input
 
 === New Features and Behavioural Changes
 
@@ -680,11 +669,9 @@ http://packages.couchbase.com/clients/net/2.5/Couchbase-Net-Client-2.5.4.zip[Dow
 
 This release has the following known issues:
 
-* https://issues.couchbase.com/browse/NCBC-1296[NCBC-1296] -
-.NETCore SDK N1QL query throws System.PlatformNotSupportedException
-on some .NET Core platforms.  A workaround is available.
-* https://issues.couchbase.com/browse/NCBC-1502[NCBC-1502] -
-Fatal error: unexpected end of JSON input
+
+* https://issues.couchbase.com/browse/NCBC-1296[NCBC-1296] - PlatformNotSupportedException thrown when using libcurl <= 7.29.0 and OpenSSL
+* https://issues.couchbase.com/browse/NCBC-1502[NCBC-1502] - Fatal error: unexpected end of JSON input
 
 === New Features and Behavioural Changes
 
@@ -733,11 +720,8 @@ http://packages.couchbase.com/clients/net/2.5/Couchbase-Net-Client-2.5.3.zip[Dow
 
 This release has the following known issues:
 
-* https://issues.couchbase.com/browse/NCBC-1296[NCBC-1296] -
-.NETCore SDK N1QL query throws System.PlatformNotSupportedException
-on some .NET Core platforms.  A workaround is available.
-* https://issues.couchbase.com/browse/NCBC-1502[NCBC-1502] -
-Fatal error: unexpected end of JSON input
+* https://issues.couchbase.com/browse/NCBC-1296[NCBC-1296] - PlatformNotSupportedException thrown when using libcurl <= 7.29.0 and OpenSSL
+* https://issues.couchbase.com/browse/NCBC-1502[NCBC-1502] - Fatal error: unexpected end of JSON input
 
 === New Features and Behavioural Changes
 
@@ -825,11 +809,8 @@ http://packages.couchbase.com/clients/net/2.5/Couchbase-Net-Client-2.5.2.zip[Dow
 
 This release has the following known issues:
 
-* https://issues.couchbase.com/browse/NCBC-1296[NCBC-1296] -
-.NETCore SDK N1QL query throws System.PlatformNotSupportedException
-on some .NET Core platforms.  A workaround is available.
-* https://issues.couchbase.com/browse/NCBC-1502[NCBC-1502] -
-Fatal error: unexpected end of JSON input
+* https://issues.couchbase.com/browse/NCBC-1296[NCBC-1296] - PlatformNotSupportedException thrown when using libcurl <= 7.29.0 and OpenSSL
+* https://issues.couchbase.com/browse/NCBC-1502[NCBC-1502] - Fatal error: unexpected end of JSON input
 
 === New Features and Behavioural Changes
 
@@ -885,11 +866,8 @@ Please use 2.5.2 instead.
 
 This release has the following known issues:
 
-* https://issues.couchbase.com/browse/NCBC-1296[NCBC-1296] -
-.NETCore SDK N1QL query throws System.PlatformNotSupportedException
-on some .NET Core platforms.  A workaround is available.
-* https://issues.couchbase.com/browse/NCBC-1502[NCBC-1502] -
-Fatal error: unexpected end of JSON input
+* https://issues.couchbase.com/browse/NCBC-1296[NCBC-1296] - PlatformNotSupportedException thrown when using libcurl <= 7.29.0 and OpenSSL
+* https://issues.couchbase.com/browse/NCBC-1502[NCBC-1502] - Fatal error: unexpected end of JSON input
 
 === New Features and Behavioural Changes
 
@@ -963,14 +941,9 @@ use 2.5.1 instead.
 
 This release has the following known issues:
 
-* https://issues.couchbase.com/browse/NCBC-1296[NCBC-1296] -
-.NETCore SDK N1QL query throws System.PlatformNotSupportedException
-on some .NET Core platforms.  A workaround is available.
-* https://issues.couchbase.com/browse/NCBC-1502[NCBC-1502] -
-Fatal error: unexpected end of JSON input
-* https://issues.couchbase.com/browse/NCBC-1545[NCBC-1545] -
-Adding nodes to a 5.0.0 cluster can return "None" as error, never
-recovering
+* https://issues.couchbase.com/browse/NCBC-1296[NCBC-1296] - PlatformNotSupportedException thrown when using libcurl <= 7.29.0 and OpenSSL
+* https://issues.couchbase.com/browse/NCBC-1502[NCBC-1502] - Fatal error: unexpected end of JSON input
+* https://issues.couchbase.com/browse/NCBC-1545[NCBC-1545] - Adding nodes to a 5.0.0 cluster can return "None" as error, never recovering
 
 === New Features and Behavioral Changes
 
@@ -1050,9 +1023,8 @@ Format exception with Common.Logging and QueryCliente
 
 This release has the following known issues:
 
-* https://issues.couchbase.com/browse/NCBC-1296[NCBC-1296] -
-.NETCore SDK N1QL query throws System.PlatformNotSupportedException
-on some .NET Core platforms.  A workaround is available.
+* https://issues.couchbase.com/browse/NCBC-1296[NCBC-1296] - PlatformNotSupportedException thrown when using libcurl <= 7.29.0 and OpenSSL
+
 
 === New Features and Behavioral Changes
 
@@ -1090,11 +1062,8 @@ View and N1QL queries fail on single-node cluster
 
 This release has the following known issues:
 
-* https://issues.couchbase.com/browse/NCBC-1296[NCBC-1296] -
-.NETCore SDK N1QL query throws System.PlatformNotSupportedException
-on some .NET Core platforms.  A workaround is available.
-* https://issues.couchbase.com/browse/NCBC-1465[NCBC-1465]
-- View and N1QL queries fail on single-node cluster. See issue for
+* https://issues.couchbase.com/browse/NCBC-1296[NCBC-1296] - PlatformNotSupportedException thrown when using libcurl <= 7.29.0 and OpenSSL
+* https://issues.couchbase.com/browse/NCBC-1465[NCBC-1465] - View and N1QL queries fail on single-node cluster. See issue for
 workaround.
 
 === New Features and Behavioral Changes
@@ -1158,22 +1127,12 @@ the next release.
 
 This release has the following known issues:
 
-* https://issues.couchbase.com/browse/NCBC-1296[NCBC-1296] -
-.NETCore SDK N1QL query throws System.PlatformNotSupportedException
-on some .NET Core platforms.  A workaround is available.
-* https://issues.couchbase.com/browse/NCBC-1318[NCBC-1318] -
-.Net Core SDK fails connect to nodes after restart all nodes in
-async mode on CentOS7.  Other platforms do not exhibit this
-behavior.
-* https://issues.couchbase.com/browse/NCBC-1417[NCBC-1417] -
-Error when creating bucket "The port number must be greater than
-1023..." (Affects all 2.X clients)
-* https://issues.couchbase.com/browse/NCBC-1462[NCBC-1462]
-- OperationTimeout when bootstrapping and using Memcached bucket
-* https://issues.couchbase.com/browse/NCBC-1459[NCBC-1459]
-- AuthenticationException when BucketConfiguration.MinSize is 0
-* https://issues.couchbase.com/browse/NCBC-1458[NCBC-1458]
-- KeyNotFoundException when UseEnhancedDurability is true
+* https://issues.couchbase.com/browse/NCBC-1296[NCBC-1296] - PlatformNotSupportedException thrown when using libcurl <= 7.29.0 and OpenSSL
+* https://issues.couchbase.com/browse/NCBC-1318[NCBC-1318] - .Net Core SDK fails connect to nodes after restart all nodes in async mode on CentOS7.  Other platforms do not exhibit this behavior.
+* https://issues.couchbase.com/browse/NCBC-1417[NCBC-1417] - Error when creating bucket "The port number must be greater than 1023..." (Affects all 2.X clients)
+* https://issues.couchbase.com/browse/NCBC-1462[NCBC-1462] - OperationTimeout when bootstrapping and using Memcached bucket
+* https://issues.couchbase.com/browse/NCBC-1459[NCBC-1459] - AuthenticationException when BucketConfiguration.MinSize is 0
+* https://issues.couchbase.com/browse/NCBC-1458[NCBC-1458] - KeyNotFoundException when UseEnhancedDurability is true
 
 === New Features and Behavioral Changes
 
@@ -1235,8 +1194,8 @@ Don't use IOService to authenticate PlainTextMechanism
 This release has the following known issues:
 
 * https://issues.couchbase.com/browse/NCBC-1296[NCBC-1296] -
-.NETCore SDK N1QL query throws System.PlatformNotSupportedException
-on some .NET Core platforms.  A workaround is available.
+PlatformNotSupportedException thrown when using libcurl <= 7.29.0 and OpenSSL
+
 * https://issues.couchbase.com/browse/NCBC-1318[NCBC-1318] -
 .Net Core SDK fails connect to nodes after restart all nodes in
 async mode on CentOS7.  Other platforms do not exhibit this
@@ -1338,8 +1297,8 @@ Sample app RBAC update for 5.0
 This release has the following known issues:
 
 * https://issues.couchbase.com/browse/NCBC-1296[NCBC-1296] -
-.NETCore SDK N1QL query throws System.PlatformNotSupportedException
-on some .NET Core platforms.  A workaround is available.
+PlatformNotSupportedException thrown when using libcurl <= 7.29.0 and OpenSSL
+
 * https://issues.couchbase.com/browse/NCBC-1318[NCBC-1318] -
 .Net Core SDK fails connect to nodes after restart all nodes in
 async mode on CentOS7.  Other platforms do not exhibit this
@@ -1410,8 +1369,8 @@ Views return null values for each row when UseStreaming is enabled.
 This release has the following known issues:
 
 * https://issues.couchbase.com/browse/NCBC-1296[NCBC-1296] -
-.NETCore SDK N1QL query throws System.PlatformNotSupportedException
-on some .NET Core platforms.  A workaround is available.
+PlatformNotSupportedException thrown when using libcurl <= 7.29.0 and OpenSSL
+
 * https://issues.couchbase.com/browse/NCBC-1318[NCBC-1318] -
 .Net Core SDK fails connect to nodes after restart all nodes in
 async mode on CentOS7.  Other platforms do not exhibit this
@@ -1510,8 +1469,8 @@ Single Subdoc Operation With Short Results Throw NRE Reading Content
 This release has the following known issues:
 
 * https://issues.couchbase.com/browse/NCBC-1296[NCBC-1296] -
-.NETCore SDK N1QL query throws System.PlatformNotSupportedException
-on some .NET Core platforms.  A workaround is available.
+PlatformNotSupportedException thrown when using libcurl <= 7.29.0 and OpenSSL
+
 * https://issues.couchbase.com/browse/NCBC-1318[NCBC-1318] -
 .Net Core SDK fails connect to nodes after restart all nodes in
 async mode on CentOS7.  Other platforms do not exhibit this
