@@ -43,7 +43,79 @@ include::6.5@sdk:shared:partial$migration.adoc[tag=new]
 
 include::6.5@sdk:shared:partial$migration.adoc[tag=lang]
 
+===  Installation and Configuration
 
+SDK 3.0 is available from the same locations as the 2.0 SDK:
+* From NuGet (the most popular choice): `Install-Package CouchbaseNetClient -Version 3.0.0-beta2`
+* By downloading a [zip]https://packages.couchbase.com/clients/net/3.0/Couchbase-Net-Client.3.0.0-beta2.zip file directly
+* By cloning and building the source code directly on [github]https://github.com/couchbase/couchbase-net-client/tree/master
+
+Note that if browsing the source directly on Github, the SDK-3 branch is master. 
+
+Couchbase .NET SDK 3.0 targets the .NET Standard 2.0; this intentional so that .NET Full Framework 4.8 can be supported along with .NET Core 3.X and earlier and is the suggested path for library authors. The goal is to use the latest and greatest .NET Core libraries available, but still allow fallback for developers still using .NET Full Framework as they progress towards .NET Standard compliance.
+
+==== Dependencies
+
+For the most part, there are few dependency changes other than using the latest versions compared to SDK 2.0 other than we no longer have any dependencies on .NET Framework4.5.2; everything is based on .NETStandard 2.0. One dependency change was added was including DnsClient, which was previously in SDK 2.0 an indirect dependency via the [Couchbase.Extensions.DnsDiscovery]https://github.com/couchbaselabs/Couchbase.Extensions/blob/master/docs/dns-srv.md project.
+
+The current dependency list:
+
+* DnsClient (>= 1.2.0)
+* Microsoft.CSharp (>= 4.5.0)
+* Microsoft.Extensions.Logging (>= 2.1.1)
+* Newtonsoft.Json (>= 11.0.2)
+* OpenTracing (>= 0.12.0)
+* System.Memory (>= 4.5.2)
+
+Note that if using the NuGet package these dependencies will all be handled for you by the NuGet Package Manager tool in Visual Studio or Visual Code. The command to add the Couchbase.Net SDK 3.0 dependency to your application is:
+
+[source]
+----
+Install-Package CouchbaseNetClient -Version 3.0.0-beta2
+----
+
+If you are using the CIL, then command to add the dependency is slightly different:
+[source]
+----
+dotnet add package CouchbaseNetClient --version 3.0.0-beta2
+----
+
+==== Configuration Changes
+Configuration is basically the same as SDK 2.0 except that the number for tunable properties is smaller and instead of using a `ClientConfiguration` object, you would use a `ClusterOptions` object. For example, to use a custom timeout for Key/Value (K/V) operations in SDK 2.0 you would do something like this:
+
+[source,csharp]
+----
+// SDK 2.0 custom k/v timeout
+var config = new ClientConfiguration
+{
+    DefaultOperationLifespan = (uint)TimeSpan.FromMinutes(10).TotalMilliseconds
+};
+----
+
+You can perform the same custom K/V timeout in SDK 3.0, however, you will use the `ClusterOptions` class:
+
+[source,csharp]
+----
+// SDK 3.0 custom k/v timeout
+ var config = new ClusterOptions
+{
+    KvTimeout = TimeSpan.FromMinutes(10)
+};
+----
+
+The configuration options are passed into the `Cluster` object via a constructor:
+
+[source,csharp]
+----
+var cluster = new Cluster("couchbase://localhost", options);
+----
+
+Or by using one of the static `Cluster.Connect(...)` methods:
+
+[source,csharp]
+----
+var cluster = Cluster.Connect("couchbase://localhost", options);
+----
 
 // Outline below for individual SDKs -- please expand as appropriate, many topics can be covered lightly
 //
