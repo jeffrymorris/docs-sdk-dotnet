@@ -1,6 +1,6 @@
 = Couchbase .NET SDK Release Notes and Archives
 :page-partial:
-:page-aliases: relnotes-dotnet-sdk,release-notes,download-links,project-docs:migrating-sdk-code-to-3.n,project-docs:sdk-release-notes
+:page-aliases: relnotes-dotnet-sdk,release-notes,download-links,project-docs:migrating-sdk-code-to-3.n,project-docs:sdk-release-notes,4.1@server:sdks:dotnet-2.2/release-notes
 
 // tag::latest[]
 == Installation
@@ -34,7 +34,7 @@ From the Package Manager Console within your project:
  ** To install a specific version, include the version parameter.
 For example:
 
- Install-Package CouchbaseNetClient -Version 2.7.0
+ Install-Package CouchbaseNetClient -Version 2.7.26
 
 === Downloading and referencing the binaries
 
@@ -81,6 +81,317 @@ https://github.com/couchbase/couchbase-net-client/fork
 
 After you have successfully built the source, it's then just a matter of referencing the binaries (.DLL files) from your consuming project.
 _Note that you can checkout a specific tag for each release as well._
+
+== Version 2.7.27 (1st February 2022)
+
+https://packages.couchbase.com/clients/net/2.7/Couchbase-Net-Client-2.7.27.zip[Download] |
+http://docs.couchbase.com/sdk-api/couchbase-net-client-2.7.27[API Reference] |
+https://www.nuget.org/packages/CouchbaseNetClient/2.7.27[Nuget]
+
+=== Known Issues
+This release has the following known issues:
+
+* https://issues.couchbase.com/browse/NCBC-1296[NCBC-1296]:
+.NETCore SDK N1QL query throws System.PlatformNotSupportedException on some .NET Core platforms.
+ A workaround is available.
+
+=== Fixed Issues
+
+* https://issues.couchbase.com/browse/NCBC-2997[NCBC-2997] : SDK returns false when checking for exist in Couchbase 7.
+* https://issues.couchbase.com/browse/NCBC-3093[NCBC-3093] : ClientConfiguration.NetworkType is not correctly assigned to the bucket config.
+* https://issues.couchbase.com/browse/NCBC-3098[NCBC-3098] : NMVB when using Alternate Addresses.
+
+== Version 2.7.26 (2nd June 2021)
+
+https://packages.couchbase.com/clients/net/2.7/Couchbase-Net-Client-2.7.26.zip[Download] |
+http://docs.couchbase.com/sdk-api/couchbase-net-client-2.7.26[API Reference] |
+https://www.nuget.org/packages/CouchbaseNetClient/2.7.26[Nuget]
+
+=== Known Issues
+This release has the following known issues:
+
+* https://issues.couchbase.com/browse/NCBC-1296[NCBC-1296]:
+.NETCore SDK N1QL query throws System.PlatformNotSupportedException on some .NET Core platforms.
+ A workaround is available.
+
+=== Fixed Issues
+
+* https://issues.couchbase.com/browse/NCBC-2872[NCBC-2872]: NullReference encountered on GetDocumentFromReplicaAsync and GetFromReplicaAsync when ssl is enabled.
+* https://issues.couchbase.com/browse/NCBC-2873[NCBC-2873]: SharedConnectionPool System.ArgumentOutOfRangeException: Index was out of range.
+
+== Version 2.7.25 (13th May 2021)
+
+https://packages.couchbase.com/clients/net/2.7/Couchbase-Net-Client-2.7.25.zip[Download] |
+http://docs.couchbase.com/sdk-api/couchbase-net-client-2.7.25[API Reference] |
+https://www.nuget.org/packages/CouchbaseNetClient/2.7.25[Nuget]
+
+=== Known Issues
+This release has the following known issues:
+
+* https://issues.couchbase.com/browse/NCBC-1296[NCBC-1296]:
+.NETCore SDK N1QL query throws System.PlatformNotSupportedException on some .NET Core platforms.
+ A workaround is available.
+
+=== Fixed Issues
+
+* https://issues.couchbase.com/browse/NCBC-2849[NCBC-2849]: 
+Ensure FF Maps is only used after a NMVB.
+
+
+== Version 2.7.24 (10th April 2021)
+
+https://packages.couchbase.com/clients/net/2.7/Couchbase-Net-Client-2.7.24.zip[Download] |
+http://docs.couchbase.com/sdk-api/couchbase-net-client-2.7.24[API Reference] |
+https://www.nuget.org/packages/CouchbaseNetClient/2.7.24[Nuget]
+
+=== Known Issues
+This release has the following known issues:
+
+* https://issues.couchbase.com/browse/NCBC-1296[NCBC-1296]:
+.NETCore SDK N1QL query throws System.PlatformNotSupportedException on some .NET Core platforms.
+ A workaround is available.
+
+=== Fixed Issues
+
+* https://issues.couchbase.com/browse/NCBC-2840[NCBC-2840]:
+ Mismatch between seconds/milliseconds with K/V timeouts
+
+== Version 2.7.23 (13th January 2021)
+
+https://packages.couchbase.com/clients/net/2.7/Couchbase-Net-Client-2.7.23.zip[Download] |
+http://docs.couchbase.com/sdk-api/couchbase-net-client-2.7.23[API Reference] |
+https://www.nuget.org/packages/CouchbaseNetClient/2.7.23[Nuget]
+
+=== Known Issues
+This release has the following known issues:
+
+* https://issues.couchbase.com/browse/NCBC-1296[NCBC-1296]:
+.NETCore SDK N1QL query throws System.PlatformNotSupportedException on some .NET Core platforms.
+ A workaround is available.
+
+=== Fixed Issues
+
+* https://issues.couchbase.com/browse/NCBC-2768[NCBC-2768]:
+Improve precision of UnixMillisecondsConverter
+
+== Version 2.7.22 (10th November 2020)
+
+https://packages.couchbase.com/clients/net/2.7/Couchbase-Net-Client-2.7.22.zip[Download] |
+http://docs.couchbase.com/sdk-api/couchbase-net-client-2.7.22[API Reference] |
+https://www.nuget.org/packages/CouchbaseNetClient/2.7.22[Nuget]
+
+=== Known Issues
+This release has the following known issues:
+
+* https://issues.couchbase.com/browse/NCBC-1296[NCBC-1296]:
+.NETCore SDK N1QL query throws System.PlatformNotSupportedException on some .NET Core platforms.
+ A workaround is available.
+
+=== Fixed Issues
+
+* https://issues.couchbase.com/browse/NCBC-2272[NCBC-2272], 
+https://issues.couchbase.com/browse/NCBC-2287[NCBC-2287]:
+Fixed a bug where the timeout was used as the expiration thus the doc would expire quickly.
+* https://issues.couchbase.com/browse/NCBC-2691[NCBC-2691]:
+`NullConfigException: NodeLocator is not defined` error against Server 6.5 and up fixed -- was caused by SELECT_BUCKET being called before enabling authentication.
+* https://issues.couchbase.com/browse/NCBC-2703[NCBC-2703]:
+Key too long no longer kills connection.
+If the key exceeds the max size of 250 bytes it will fast-fail on the client via an `ArgumentInvalidException`.
+
+== Version 2.7.21 (1st September 2020)
+
+https://packages.couchbase.com/clients/net/2.7/Couchbase-Net-Client-2.7.21.zip[Download] | 
+http://docs.couchbase.com/sdk-api/couchbase-net-client-2.7.21[API Reference] |
+https://www.nuget.org/packages/CouchbaseNetClient/2.7.21[Nuget]
+
+=== Known Issues
+This release has the following known issues:
+
+* https://issues.couchbase.com/browse/NCBC-1296[NCBC-1296]:
+.NETCore SDK N1QL query throws System.PlatformNotSupportedException on some .NET Core platforms.
+ A workaround is available.
+* https://issues.couchbase.com/browse/NCBC-1502[NCBC-1502]:
+Certain Prepared statements could produce _Fatal error: unexpected end of JSON input_.
+
+=== Fixed Issues
+
+* https://issues.couchbase.com/browse/NCBC-2616[NCBC-2616]: 
+Fixed a bug where the stream writer is causing the recyclable memory stream to be disposed prior to the `ToArray` call being made.
+* https://issues.couchbase.com/browse/NCBC-2629[NCBC-2629]: 
+Added Raw parameter to SearchParams.
+
+== Version 2.7.20 (6th August 2020)
+
+https://packages.couchbase.com/clients/net/2.7/Couchbase-Net-Client-2.7.20.zip[Download] | 
+// http://docs.couchbase.com/sdk-api/couchbase-net-client-2.7.20[API Reference] |
+https://www.nuget.org/packages/CouchbaseNetClient/2.7.20[Nuget]
+
+=== Known Issues
+This release has the following known issues:
+
+* https://issues.couchbase.com/browse/NCBC-1296[NCBC-1296]:
+.NETCore SDK N1QL query throws System.PlatformNotSupportedException on some .NET Core platforms.
+ A workaround is available.
+* https://issues.couchbase.com/browse/NCBC-1502[NCBC-1502]:
+Certain Prepared statements could produce _Fatal error: unexpected end of JSON input_.
+
+=== Fixed Issues
+
+* https://issues.couchbase.com/browse/NCBC-2624[NCBC-2624]: Not connected to any bucket/NO_BUCKET
+
+== Version 2.7.19 (6th August 2020) - delisted in NuGet - use 2.7.20 instead
+https://packages.couchbase.com/clients/net/2.7/Couchbase-Net-Client-2.7.19.zip[Download] | 
+// http://docs.couchbase.com/sdk-api/couchbase-net-client-2.7.19[API Reference] |
+https://www.nuget.org/packages/CouchbaseNetClient/2.7.19[Nuget]
+
+=== Known Issues
+This release has the following known issues:
+
+* https://issues.couchbase.com/browse/NCBC-1296[NCBC-1296]:
+.NETCore SDK N1QL query throws System.PlatformNotSupportedException on some .NET Core platforms.
+ A workaround is available.
+* https://issues.couchbase.com/browse/NCBC-1502[NCBC-1502]:
+Certain Prepared statements could produce _Fatal error: unexpected end of JSON input_.
+
+=== Fixed Issues
+
+* https://issues.couchbase.com/browse/NCBC-2554[NCBC-2554]: Remove authzid in 2.7.x branch
+* https://issues.couchbase.com/browse/NCBC-2607[NCBC-2607]: VBucketServerMap.EnsureIPEndPointsAreLoaded Not Thread Safe
+* https://issues.couchbase.com/browse/NCBC-2613[NCBC-2613]: Ensure exception thrown by config thread is handled
+* https://issues.couchbase.com/browse/NCBC-2615[NCBC-2615]: Potential unexpected response code on timeout
+
+== Version 2.7.18 (9th June 2020)
+
+https://packages.couchbase.com/clients/net/2.7/Couchbase-Net-Client-2.7.18.zip[Download] | 
+// http://docs.couchbase.com/sdk-api/couchbase-net-client-2.7.18[API Reference] |
+https://www.nuget.org/packages/CouchbaseNetClient/2.7.18[Nuget]
+
+=== Known Issues
+This release has the following known issues:
+
+* https://issues.couchbase.com/browse/NCBC-1296[NCBC-1296]:
+.NETCore SDK N1QL query throws System.PlatformNotSupportedException on some .NET Core platforms.
+ A workaround is available.
+* https://issues.couchbase.com/browse/NCBC-1502[NCBC-1502]:
+Certain Prepared statements could produce _Fatal error: unexpected end of JSON input_.
+
+=== Fixed Issues
+
+* https://issues.couchbase.com/browse/NCBC-2527[NCBC-2527]:
+.NETCore SDK N1QL query throws System.PlatformNotSupportedException on some .NET Core platforms.
+ A workaround is available.
+* https://issues.couchbase.com/browse/NCBC-2423[NCBC-2423]:
+Certain Prepared statements could produce _Fatal error: unexpected end of JSON input_.
+
+== Version 2.7.17 (5th May 2020)
+
+https://packages.couchbase.com/clients/net/2.7/Couchbase-Net-Client-2.7.17.zip[Download] | 
+// http://docs.couchbase.com/sdk-api/couchbase-net-client-2.7.17[API Reference] |
+https://www.nuget.org/packages/CouchbaseNetClient/2.7.17[Nuget]
+
+=== Known Issues
+This release has the following known issues:
+
+* https://issues.couchbase.com/browse/NCBC-1296[NCBC-1296]:
+.NETCore SDK N1QL query throws System.PlatformNotSupportedException on some .NET Core platforms.
+ A workaround is available.
+* https://issues.couchbase.com/browse/NCBC-1502[NCBC-1502]:
+Certain Prepared statements could produce _Fatal error: unexpected end of JSON input_.
+
+=== Fixed Issues
+
+* https://issues.couchbase.com/browse/NCBC-1945[NCBC-1945]: 
+The SDK client was failing to apply new a rev map when using HTTP bootstrap.
+This has been fixed and the http config handler will now process new configs from the server.
+* https://issues.couchbase.com/browse/NCBC-2465[NCBC-2465]: 
+Ping now records failures for non-KV services.
+* https://issues.couchbase.com/browse/NCBC-2361[NCBC-2361]: 
+The SDK client no longer exports fuzziness or prefix_length when values less than 1.
+This enables search for an exact value in FTS with Server 6.5, which does not accept a fuzziness value of 0.
+
+== Version 2.7.16 (11th Feb 2020)
+
+https://packages.couchbase.com/clients/net/2.7/Couchbase-Net-Client-2.7.16.zip[Download] | http://docs.couchbase.com/sdk-api/couchbase-net-client-2.7.16[API Reference] | https://www.nuget.org/packages/CouchbaseNetClient/2.7.16[Nuget]
+
+=== Known Issues
+This release has the following known issues:
+
+* https://issues.couchbase.com/browse/NCBC-1296[NCBC-1296]:
+.NETCore SDK N1QL query throws System.PlatformNotSupportedException on some .NET Core platforms.
+ A workaround is available.
+* https://issues.couchbase.com/browse/NCBC-1502[NCBC-1502]:
+Certain Prepared statements could produce _Fatal error: unexpected end of JSON input_.
+
+=== Fixed Issues
+
+* https://issues.couchbase.com/browse/NCBC-2200[NCBC-2200]: 
+Thrown `SendTimeoutExpiredException` was not closing the connection.
+This connection closure should now be handled gracefully.
+* https://issues.couchbase.com/browse/NCBC-2235[NCBC-2235]: 
+`MultiLookup` was failing if more than one lookup spec was added.
+`GetResultWithValue` now calls `GetMultiValues` instead of `GetValue`, so `MultipleLookupIn` operations specs can be chained.
+* https://issues.couchbase.com/browse/NCBC-2342[NCBC-2342]: 
+`Couchbase.IO.SharedConnectionPools.Acquire` was sometimes throwing an  `IndexIndexOutOfRangeException`.
+Parallel connection pool initialization has been reverted to ensure this no longer occurs.
+
+
+== Version 2.7.15 (5th Dec 2019)
+
+https://packages.couchbase.com/clients/net/2.7/Couchbase-Net-Client-2.7.15.zip[Download] | http://docs.couchbase.com/sdk-api/couchbase-net-client-2.7.15[API Reference] | https://www.nuget.org/packages/CouchbaseNetClient/2.7.15[Nuget]
+
+=== Known Issues
+This release has the following known issues:
+
+* https://issues.couchbase.com/browse/NCBC-1296[NCBC-1296]:
+.NETCore SDK N1QL query throws System.PlatformNotSupportedException on some .NET Core platforms.
+ A workaround is available.
+* https://issues.couchbase.com/browse/NCBC-1502[NCBC-1502]:
+Certain Prepared statements could produce _Fatal error: unexpected end of JSON input_.
+
+=== Fixed Issues
+
+* https://issues.couchbase.com/browse/NCBC-2179[NCBC-2179]: 
+In certain circumstances, `LookupIn` did not correctly parse the config returned by NMVB (Not My VBucket).
+This should no longer occur.
+* https://issues.couchbase.com/browse/NCBC-2192[NCBC-2192]: 
+Sub-document remove no longer encodes null value as a literal string -- so no longer triggers server invalid arguments.
+
+=== New Features and Behavioral Changes
+
+* https://issues.couchbase.com/browse/NCBC-2198[NCBC-2198]: 
+Created additional Sub-Document test to verify https://issues.couchbase.com/browse/NCBC-2038[NCBC-2038].
+
+NOTE: 2.7.14 has a packaging issue, and is unlisted on NuGet.
+
+== Version 2.7.13 (5th Nov 2019)
+
+https://packages.couchbase.com/clients/net/2.7/Couchbase-Net-Client-2.7.13.zip[Download] | http://docs.couchbase.com/sdk-api/couchbase-net-client-2.7.13[API Reference] | https://www.nuget.org/packages/CouchbaseNetClient/2.7.13[Nuget]
+
+=== Known Issues
+This release has the following known issues:
+
+* https://issues.couchbase.com/browse/NCBC-1296[NCBC-1296]:
+.NETCore SDK N1QL query throws System.PlatformNotSupportedException on some .NET Core platforms.
+ A workaround is available.
+* https://issues.couchbase.com/browse/NCBC-1502[NCBC-1502]:
+Certain Prepared statements could produce _Fatal error: unexpected end of JSON input_.
+
+=== Fixed Issues
+
+* https://issues.couchbase.com/browse/NCBC-2146[NCBC-2146]: 
+When the `SslConnection.Send` was called, it released itself from the ConnectionPool.
+This is no longer the case, and the connection should now rely on the connection pool to deal with both acquiring and releasing connection.
+* https://issues.couchbase.com/browse/NCBC-2152[NCBC-2152]: 
+`SslConnection` now cleans up correctly, no longer suppressing finalizer method when not in DEBUG mode.
+* https://issues.couchbase.com/browse/NCBC-2159[NCBC-2159]: 
+A task awaiter is now configured by SslConnection to ensure no blocking when it calls SendAsync.
+
+=== New Features and Behavioral Changes
+
+* https://issues.couchbase.com/browse/NCBC-2148[NCBC-2148]: 
+When a connection pool calls `Initialize`, it now bootstraps the connections in parallel to improve startup time.
+* https://issues.couchbase.com/browse/NCBC-2163[NCBC-2163]: 
+The SDK no longer hops to an async path when executing synchronous operations using SSL.
 
 == Version 2.7.12 (13th Sept 2019)
 
@@ -2369,4 +2680,9 @@ Regression - MutationToken are not set when UseEnhancedDurabity is
 true
 * https://issues.couchbase.com/browse/NCBC-769[NCBC-769] -
 Ensure support for "Consistency Parameters" is implemented correctly
+
+
+== Older Releases
+
+Although https://www.couchbase.com/support-policy/enterprise-software[no longer supported], documentation for older releases continues to be available in our https://docs-archive.couchbase.com/home/index.html[docs archive].
 // end::latest[]
