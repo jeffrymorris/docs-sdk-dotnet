@@ -17,7 +17,7 @@ The full installation instructions that were previously on this page can now be 
 
 == Version 3.3.1 (29 April 2022)
 
-Version 3.3.1 is the second release of the 3.3 series. It contains a single ticket (NCBC-3192) and is a re-release of 3.3.0 with (NCBC-3192).
+Version 3.3.1 is the second release of the 3.3 series.
 
 https://packages.couchbase.com/clients/net/3.3/Couchbase-Net-Client-3.3.1.zip[Download] |
 https://docs.couchbase.com/sdk-api/couchbase-net-client-3.3.1[API Reference] |
